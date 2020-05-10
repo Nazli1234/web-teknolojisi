@@ -1,0 +1,43 @@
+body
+{
+	background-image:url(resim1.jpg);
+    background-repeat : no-repeat; 
+    background-size:cover;
+}
+header 
+{
+	background-color:#C51162;
+}
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content:center;
+}
+.menu li {
+	border-right: 3px solid black;
+
+}
+
+.menu li:first-child {
+	border-left: 3px solid black;
+}
+
+.menu li:hover {
+	
+	background-color: black;
+}
+
+.menu li a {
+	display: block;
+	padding: 15px 50px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+
+
