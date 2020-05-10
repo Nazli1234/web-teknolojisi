@@ -1,0 +1,56 @@
+<html>
+<form name="frm1" action="iletisim.php" method="post">
+<meta charset="utf-8">
+<link rel="stylesheet" href="iletisim.css">
+<center>
+<table>
+<tr><td colspan="2" align="left"><b>BİZE ULAŞIN</b></td>
+</tr>
+<tr><td colspan="2">Aşağıdaki formu kullanarak bize ulaşabilirsiniz</td>
+</tr>
+<tr>
+<td>Ad Soyad</td>
+<td><input type="text" name="adsoyad"></td>
+</tr>
+<tr align="left">
+<td>E-Mail</td>
+<td><input type="text" name="e_mail"></td>
+</tr>
+<tr>
+<td valign="top">Mesajınız</td>
+<td align="center"><textarea name="mesaj"></textarea></td>
+</tr>
+<tr align="center">
+<td></td>
+<td><input type="submit" name="button" id="kontrol" value="GÖNDER">
+<input type="reset" value="TEMİZLE">
+</td>
+</tr>
+</table>
+
+</form>
+
+<script>
+
+
+var kontrol=document.getElementById("kontrol");
+	kontrol.onclick=function()
+	{
+	    var adsoyad=document.frm1.adsoyad.value;
+		var e_mail=document.frm1.e_mail.value;
+		var mesaj=document.frm1.mesaj.value; 
+		var atpos=e_mail.indexOf("@");
+        var dotpos=e_mail.lastIndexOf(".");
+		if(adsoyad=="" || e_mail=="" || mesaj=="")
+        {
+          alert("Boş bırakılan alanları doldurunuz");
+        }
+		
+        else if ( atpos<1 || dotpos<atpos+2 || dotpos+2>=e_mail.length )
+        {
+          alert("Geçerli bir e-mail adresi giriniz");    
+        }
+	}
+
+</script>
+</html>

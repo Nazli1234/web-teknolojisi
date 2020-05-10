@@ -1,0 +1,41 @@
+body
+{   
+    margin-top:0;
+	background-image:url(resim3.jpg);
+	background-repeat : no-repeat; 
+    background-size:cover;
+}
+table
+{
+	padding-top:100px;
+    padding-bottom:140px;
+	background-color:#F0FFF0;
+	border-left:7px solid gray;
+	border-right:7px solid gray;	
+}
+input
+{
+	margin:5px;
+	width:330px;
+	height:25px;
+	border:2px solid gray;
+}
+input[type=submit]
+{
+	width:80px;
+	height:30px;
+	border:2px solid gray;
+}
+textarea
+{
+	resize: none;
+	border:2px solid gray;
+	width:330px;
+	height:165px;
+}
+input[type=reset]
+{
+	width:80px;
+	height:30px;
+	border:2px solid gray;
+}
